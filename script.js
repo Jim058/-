@@ -11,7 +11,7 @@ check.addEventListener('click', function() {
     //1為一組，2、3為一組
     if (inputs[0].checked) {
       //是否還有勾選2或3
-      if (inputs[1].checked || inputs[2].checked) {
+      if (inputs[1].checked && inputs[2].checked) {
         result.innerHTML = '有什麼障礙?'
         return 0
       } else {
